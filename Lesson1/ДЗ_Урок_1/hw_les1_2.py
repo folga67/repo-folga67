@@ -2,9 +2,10 @@ while True:
     userTime = input("Пожалуйста, введите время в секундах\n")
     if userTime.isdigit():
         userTime = int(userTime)
-        break
-    else:
-        print("Ошибка. Можно ввести только число")
+    break
+else:
+    print("Ошибка. Можно ввести только число")
+
 
 hours = userTime // 3600
 minutes = userTime % 3600 // 60
